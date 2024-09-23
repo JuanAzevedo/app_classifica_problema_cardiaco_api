@@ -1,0 +1,49 @@
+[2024-09-23 15:19:46,444] INFO _log() L96    * Restarting with stat - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:19:49,339] WARNING _log() L96    * Debugger is active! - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:19:49,341] INFO _log() L96    * Debugger PIN: 132-689-196 - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:20:29,490] INFO _log() L96   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:20:29,493] INFO _log() L96   [33mPress CTRL+C to quit[0m - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:20:29,495] INFO _log() L96    * Restarting with stat - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:20:31,608] WARNING _log() L96    * Debugger is active! - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:20:31,610] INFO _log() L96    * Debugger PIN: 132-689-196 - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:20:32,178] INFO _log() L96   127.0.0.1 - - [23/Sep/2024 15:20:32] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:20:32,282] INFO _log() L96   127.0.0.1 - - [23/Sep/2024 15:20:32] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:20:32,283] INFO _log() L96   127.0.0.1 - - [23/Sep/2024 15:20:32] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:20:32,284] INFO _log() L96   127.0.0.1 - - [23/Sep/2024 15:20:32] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:20:32,376] INFO _log() L96   127.0.0.1 - - [23/Sep/2024 15:20:32] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:20:32,453] INFO _log() L96   127.0.0.1 - - [23/Sep/2024 15:20:32] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:20:32,455] INFO _log() L96   127.0.0.1 - - [23/Sep/2024 15:20:32] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:20:35,647] WARNING add_paciente() L89   Erro ao adicionar paciente 'João': Não foi possível salvar novo paciente :/ - Detalhes: (sqlite3.OperationalError) no such column: pacientes.Heart Disease
+[SQL: SELECT pacientes.id AS pacientes_id, pacientes."Name" AS "pacientes_Name", pacientes."Age" AS "pacientes_Age", pacientes."Sex" AS "pacientes_Sex", pacientes."BP" AS "pacientes_BP", pacientes."Cholesterol" AS "pacientes_Cholesterol", pacientes."Chest pain type" AS "pacientes_Chest pain type", pacientes."ST depression" AS "pacientes_ST depression", pacientes."Heart Disease" AS "pacientes_Heart Disease", pacientes.data_insercao AS pacientes_data_insercao 
+FROM pacientes 
+WHERE pacientes."Name" = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('João', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) - call_trace=C:\Users\juan_\OneDrive\Área de Trabalho\predicao_doencas_cardiacas\app.py L89  
+[2024-09-23 15:20:35,659] INFO _log() L96   127.0.0.1 - - [23/Sep/2024 15:20:35] "[31m[1mPOST /paciente HTTP/1.1[0m" 400 - - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:21:56,223] INFO _log() L96    * Detected change in 'C:\\Users\\juan_\\OneDrive\\Área de Trabalho\\predicao_doencas_cardiacas\\model\\paciente.py', reloading - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:21:56,484] INFO _log() L96    * Restarting with stat - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:21:59,420] WARNING _log() L96    * Debugger is active! - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:21:59,422] INFO _log() L96    * Debugger PIN: 132-689-196 - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:22:34,625] INFO _log() L96    * Detected change in 'C:\\Users\\juan_\\OneDrive\\Área de Trabalho\\predicao_doencas_cardiacas\\model\\paciente.py', reloading - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:22:34,870] INFO _log() L96    * Restarting with stat - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:22:37,341] WARNING _log() L96    * Debugger is active! - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:22:37,343] INFO _log() L96    * Debugger PIN: 132-689-196 - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:24:00,883] INFO _log() L96    * Detected change in 'C:\\Users\\juan_\\OneDrive\\Área de Trabalho\\predicao_doencas_cardiacas\\model\\paciente.py', reloading - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:24:01,120] INFO _log() L96    * Restarting with stat - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:24:04,273] WARNING _log() L96    * Debugger is active! - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:24:04,275] INFO _log() L96    * Debugger PIN: 132-689-196 - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:24:05,294] INFO _log() L96    * Detected change in 'C:\\Users\\juan_\\OneDrive\\Área de Trabalho\\predicao_doencas_cardiacas\\model\\paciente.py', reloading - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:24:05,528] INFO _log() L96    * Restarting with stat - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:24:07,939] WARNING _log() L96    * Debugger is active! - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:24:07,941] INFO _log() L96    * Debugger PIN: 132-689-196 - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:24:34,090] INFO _log() L96    * Detected change in 'C:\\Users\\juan_\\OneDrive\\Área de Trabalho\\predicao_doencas_cardiacas\\app.py', reloading - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:24:34,333] INFO _log() L96    * Restarting with stat - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:24:37,156] WARNING _log() L96    * Debugger is active! - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:24:37,158] INFO _log() L96    * Debugger PIN: 132-689-196 - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:24:47,229] INFO _log() L96    * Detected change in 'C:\\Users\\juan_\\OneDrive\\Área de Trabalho\\predicao_doencas_cardiacas\\app.py', reloading - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:24:47,470] INFO _log() L96    * Restarting with stat - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:24:49,973] WARNING _log() L96    * Debugger is active! - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:24:49,975] INFO _log() L96    * Debugger PIN: 132-689-196 - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
+[2024-09-23 15:24:52,000] INFO _log() L96    * Detected change in 'C:\\Users\\juan_\\OneDrive\\Área de Trabalho\\predicao_doencas_cardiacas\\app.py', reloading - call_trace=C:\Users\juan_\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py L96  
