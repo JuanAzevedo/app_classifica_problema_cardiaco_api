@@ -61,7 +61,23 @@ def apresenta_paciente(paciente):
         "ST_depression": paciente.ST_depression,
         "heart_disease": paciente.heart_disease # Presença ou Ausência
     }
-    
+
+def apresenta_pacientes(pacientes: List[Paciente]):
+    """ Retorna uma representação do paciente seguindo o schema definido em
+        PacienteViewSchema, adaptado para os atributos de diagnóstico de doença cardíaca.
+    """
+    # Retorna diretamente a lista de dicionários, sem aninhamento extra
+    return [{
+        "id": paciente.id,
+        "name": paciente.name,
+        "age": paciente.age,
+        "sex": paciente.sex,
+        "BP": paciente.BP,
+        "cholesterol": paciente.cholesterol,
+        "chest_pain_type": paciente.chest_pain_type,
+        "ST_depression": paciente.ST_depression,
+        "heart_disease": paciente.heart_disease # Presença ou Ausência
+    } for paciente in pacientes]   
 # Apresenta uma lista de pacientes
 def apresenta_pacientes(pacientes: List[Paciente]):
     """ Retorna uma representação do paciente seguindo o schema definido em
