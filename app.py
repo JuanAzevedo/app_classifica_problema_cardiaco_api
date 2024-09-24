@@ -37,7 +37,7 @@ def get_pacientes():
         return {"message": "Não há pacientes cadastrados no banco de dados :/"}, 404
     else:
         logger.debug(f"{len(pacientes)} pacientes encontrados")
-        return apresenta_pacientes(pacientes), 200  # Agora retorna diretamente a lista
+        return apresenta_pacientes(pacientes), 200
 
 # Rota de busca de paciente por nome
 @app.get('/paciente', tags=[paciente_tag],

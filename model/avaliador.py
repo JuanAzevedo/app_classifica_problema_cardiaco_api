@@ -7,7 +7,6 @@ class Avaliador:
         """ Faz uma predição e avalia o modelo. Poderia parametrizar o tipo de
         avaliação, entre outros.
         """
-        # Faltava passar o scaler, que neste caso podemos ignorar pois estamos testando um modelo básico
         # Passando o X_test como o segundo argumento
         predicoes = model.predict(X_test)
         
