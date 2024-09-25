@@ -144,7 +144,9 @@ curl -X DELETE http://127.0.0.1:5000/paciente -F "name=João"
 │   ├── model/                 
 │   │   └── knn_model.pkl       
 │   ├── scaler/
-│   │   └── scaler.pkl          
+│   │   └── scaler.pkl
+│   ├── notebook/
+│   │   └── ML_Predicao_Doencas_Cardiacas.ipynb        
 ├── model/                     
 │   ├── __init__.py
 │   ├── base.py                
